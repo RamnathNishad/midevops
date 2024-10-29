@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            function showMsg(){
+                var un=document.getElementById("uname").value;
+                document.getElementById("p1").innerHTML='<b>Welcome ' + un+"</b>";
+            }
+
+            function setBkColor(i){
+                if(i==1){
+                document.bgColor='red';
+                }else if(i==2){
+                    document.bgColor='green';
+                }else{
+                    document.bgColor='blue';
+                }
+            }
+            function setStyle1(){
+                var ele=document.getElementById("x");
+                ele.style.color='red';
+            }
+            function setStyle2(){
+                var ele=document.getElementById("x");
+                ele.style.color='blue';
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="x" onmouseover="setStyle1()" onmouseout="setStyle2()">JavaScript Demo</h1><hr/>
+        <label>Enter your name:</label>
+        <input type="text" id="uname"/>
+        <input type="button" value="Display" onclick="showMsg()" />
+
+        <p id="p1"></p>
+
+        <input type="button" value="Red" onclick="setBkColor(1)"/>
+        <input type="button" value="Green" onclick="setBkColor(2)"/>    
+        <input type="button" value="Blue" onclick="setBkColor(3)"/>
+    
+    </body>
+</html>

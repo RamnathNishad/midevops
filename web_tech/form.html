@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            input[type='text']{background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <h1>Working with HTML Form</h1><hr/>
+        <form>
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td>
+                       <input type="text" id="uname" name="uname" />     
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                       <input type="password" id="pwd" name="pwd" />     
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                       <input checked type="radio" name="gender" value="male"/>Male 
+                       <input type="radio" name="gender" value="female"/>Female 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Payment modes:</td>
+                    <td>
+                        <input type="checkbox" name="modes" value="cash"/>Cash
+                        <input checked type="checkbox" name="modes" value="upi"/>UPI
+                        <input type="checkbox" name="modes" value="net"/>Net Banking                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select City:</td>
+                    <td>
+                        <select name="city">
+                            <option value="BLR">Bangalore</option>
+                            <option selected value="MYS">Mysore</option>
+                            <option value="CHN">Chennai</option>
+                            <option value="HYD">Hyderabad</option>
+                            <option value="DLI">Delhi</option>                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td>
+                        <textarea rows="5" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Register" />
+                    </td>
+                    <td>
+                        <input type="reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

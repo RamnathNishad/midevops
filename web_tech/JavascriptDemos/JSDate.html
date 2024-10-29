@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function showDateTime(){
+                var dt=new Date();
+                var hh=dt.getHours();
+                var min =dt.getMinutes();
+                var ss=dt.getSeconds();
+                var timeDate=hh+":" +min +":" + ss;
+                document.getElementById("x").innerText=timeDate;
+            }
+            
+        </script>
+    </head>
+    <body onload="window.setInterval('showDateTime()',1000)">
+        <h1>Working with JavaScript Date Object</h1><hr/>
+        <h3 id="x"></h3>
+    </body>
+</html>

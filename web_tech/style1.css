@@ -1,0 +1,23 @@
+body{
+    /* background-color: lightgreen; */
+}
+
+h1,h2,p{
+    color:red;
+}
+
+
+/* p{
+    color:green;
+    background-color: aqua;
+} */
+
+ul#x1 > li{
+    color:red;
+}
+
+ul.c1 li{
+    color:violet
+}
+
+ul ul li#c12{color:brown}

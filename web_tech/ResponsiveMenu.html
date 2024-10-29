@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link href="style2.css" type="text/css" rel="stylesheet"/>
+        <script>
+            function toggleMenu(){                
+                var menuBar=document.getElementById("menu-item");
+                menuBar.classList.toggle("toggleMenu");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1">
+            <button onclick="toggleMenu()">[=]</button>
+        </div>
+        <nav id="navbar">
+            <ul class="menu">
+                <li id="menu-item" class="toggleMenu"><a href="#">Home</a></li>
+                <li id="menu-item" class="toggleMenu"><a href="#">ContactUs</a></li>
+                <li id="menu-item" class="toggleMenu"><a href="#">About</a></li>
+                <li id="menu-item" class="toggleMenu"><a href="#">Login</a></li>
+                <li id="menu-item" class="toggleMenu"><a href="#">Register</a></li>
+            </ul>
+        </nav>
+
+        <p>
+            <h1>Responsive Design</h1>
+            <p>This is Responsive design example using CSS</p>
+            <p>To Test this, resize the screen size to mobile device</p>
+        </p>
+        <img src="images/p1.png" />
+        <img src="images/p2.png" />
+        <img src="images/p3.png" />
+
+    </body>
+</html>
